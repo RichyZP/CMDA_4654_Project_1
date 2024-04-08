@@ -166,7 +166,6 @@ model2 <- glmnet(x=x, y=y, alpha = 0, lambda= model$lambda.min)
 coef(model2)
 
 
-
 # Set up the predictors matrix, the chose predictors variables are Financial Freedom, Government Spending and Government Intergrity
 predictors <- c("Financial Freedom", "Government Spending", "Government Integrity")
 X <- as.matrix(cleaned_data[, predictors]) 
